@@ -26,8 +26,6 @@
   <p align="center">
     Made just for fun
     <br />
-    <a href="https://github.com/caffeine-addictt/picture-recognition-ai-test">View Demo</a>
-    ·
     <a href="https://github.com/caffeine-addictt/picture-recognition-ai-test/issues">Report Bug</a>
     ·
     <a href="https://github.com/caffeine-addictt/picture-recognition-ai-test/issues">Request Feature</a>
