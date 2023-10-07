@@ -1,0 +1,1 @@
+Place,Car,Bird,Cat,Deer,Dog,Frog,Horse,Ship,Truck

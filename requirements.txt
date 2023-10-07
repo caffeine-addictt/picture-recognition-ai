@@ -1,0 +1,5 @@
+matplotlib==3.8.0
+numpy==1.26.0
+opencv-python==4.8.1.78
+opt-einsum==3.3.0
+tensorflow==2.14.0
