@@ -14,6 +14,7 @@ overwritePrevious = False
 modelSaveName = 'save.model'  # OK to leave this alone
 
 imageDirectory = 'images'     # Images have to be scaled to 32x32 (px) [only tested for .jpg]
+imageExtensions = ['jpg']
 
 
 
@@ -27,16 +28,6 @@ testingImages = testingImages / 255.0
 # Fetch Names
 with open('names.txt', 'r') as f:
   names = f.read().split(',')
-
-for i in range(16):
-  plot.subplot(4, 4, i+1)
-  plot.xticks([])
-  plot.yticks([])
-
-  plot.imshow(trainingImages[i], cmap = matplotlib.colormaps['binary'])
-  plot.xlabel(names[trainingLabels[i][0]])
-
-plot.show()
 
 
 trainingImages = trainingImages[:20000]
@@ -105,10 +96,18 @@ else:
     os.mkdir(imagePath)
     print(f'Created at {imagePath}', end='\n\n')
 
-  print('Looking for files...')
+  stdOut = 'Looking for files... Found [%s]'
+  print(stdOut % '0')
+
   filesFound = []
   for file in os.listdir(imagePath):
     filename = os.fsdecode(file)
+    if filename.split('.')[-1] in imageExtensions:
+      filesFound.append(filename)
+
+      print('\033[1A', end = '\x1b[2K')
+      print(stdOut % len(filesFound))
+
 
 
   for i, filename in enumerate(filesFound):
