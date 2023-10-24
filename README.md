@@ -177,7 +177,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Alex - taboez4life@gmail.com
+Alex - junxiangng63@gmail.com@gmail.com
 
 Project Link: [https://github.com/caffeine-addictt/picture-recognition-ai-test](https://github.com/caffeine-addictt/picture-recognition-ai-test)
 
